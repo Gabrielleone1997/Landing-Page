@@ -262,6 +262,47 @@ h1, h2, h3 {
     transform: translateY(-2px);
 }
 
+/* ================= PIXEL CREATIVEART (ESTILOS ESPECÍFICOS) ================= */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.service-item {
+    background-color: var(--bg-card);
+    padding: 20px 16px;
+    border-radius: 14px;
+    border: 1px solid var(--border-subtle);
+    transition: all 0.25s ease;
+}
+
+.service-item:hover {
+    border-color: var(--accent-blue);
+    background-color: var(--bg-card-hover);
+    transform: translateY(-3px);
+    box-shadow: var(--glow-accent);
+}
+
+.service-item span {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.service-item h3 {
+    font-size: 1rem;
+    margin: 8px 0 6px;
+    color: var(--text-primary);
+}
+
+.service-item p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
 /* ================= PROJETOS ================= */
 .projetos {
     display: grid;
